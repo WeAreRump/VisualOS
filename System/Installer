@@ -13,6 +13,5 @@ downloadFile("/visual/System", "https://raw.github.com/WeAreRump/VisualOS/master
 downloadFile("/visual/System/System32", "https://raw.github.com/WeAreRump/VisualOS/master/System/System32")
 downloadFile("/visual/System/System32/backgrounds", "https://raw.github.com/WeAreRump/VisualOS/master/System/System32/backgrounds")
 downloadFile("/visual/System/System32/backgrounds/desktop", "https://raw.github.com/WeAreRump/VisualOS/master/System/System32/backgrounds/desktop")
-downloadFile("/boot", "https://raw.github.com/WeAreRump/master/VisualOS/boot")
 
 os.reboot()
