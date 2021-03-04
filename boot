@@ -1,1 +1,1 @@
-shell.run("/visual/boot")
+shell.run("/visual/System/boot")
