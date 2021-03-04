@@ -29,7 +29,10 @@ runTime = function()
 end
 
 init = function()
-  
+  drawDesktop()
+  runTime()
 end
 
 -- Main Stuff --
+
+init()
