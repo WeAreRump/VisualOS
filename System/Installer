@@ -6,7 +6,11 @@ function downloadFile(path, url)
 	file:close()
 end
 
+fs.makeDir("/visual/boot")
 fs.makeDir("/visual/System")
+fs.makeDir("/visual/System/System32")
+fs.makeDir("/visual/System/System32/backgrounds")
+fs.makeDir("/visual/System/System32/backgrounds/desktop")
 
 downloadFile("/visual/boot", "https://raw.github.com/WeAreRump/VisualOS/master/System/boot")
 downloadFile("/visual/System", "https://raw.github.com/WeAreRump/VisualOS/master/System/")
