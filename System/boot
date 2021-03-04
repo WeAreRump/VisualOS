@@ -1,0 +1,35 @@
+-- Variables --
+version = 1.0
+running = true
+
+_dt = paintutils.loadImage("/visual/System/System32/backgrounds/desktop")
+
+-- Functions --
+
+clear = function()
+  term.clear()
+  term.setCursorPos(1, 1)
+end
+
+drawDesktop = function()
+  term..setNackgroundColor(colors.lightGray)
+  clear()
+  paintutils.drawImage(_dt, 1, 1)
+end
+
+runTime = function()
+  while running do
+    event, button, x, y = os.pullEvent("mouse_click")
+
+    if event == "mouse" then
+      clear()
+      running = false
+    end
+  end
+end
+
+init = function()
+  
+end
+
+-- Main Stuff --
