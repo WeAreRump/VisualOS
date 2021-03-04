@@ -1,9 +1,9 @@
 function downloadFile(path, url)
-  print("Copying: " .. path)
-	local data = http.get(url).readAll()
-	local file = assert(io.open(path, "w"))
-	file:write(data)
-	file:close()
+  print("Downloading " .. path)
+	data = http.get(url).readAll()
+	file = assert(io.open(path, "w"))
+	file:Write(data)
+	file:Close()
 end
 
 fs.makeDir("/visual/boot")
