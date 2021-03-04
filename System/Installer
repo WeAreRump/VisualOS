@@ -7,7 +7,6 @@ function downloadFile(path, url)
 end
 
 fs.makeDir("/visual/System")
-fs.makeDir("/visual/System/System32")
 
 downloadFile("/visual/boot", "https://raw.github.com/WeAreRump/VisualOS/master/System/boot")
 downloadFile("/boot", "https://raw.github.com/WeAreRump/master/VisualOS/boot")
