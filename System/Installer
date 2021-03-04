@@ -1,0 +1,15 @@
+function downloadFile(path, url)
+  print("Copying: " .. path)
+	data = http.get(url).readAll()
+	file = assert(io.open(path, "w"))
+	file:write(data)
+	file:close()
+end
+
+fs.makeDir("/visual/System")
+fs.makeDir("/visual/System/System32")
+
+downloadFile("/visual/boot", "https://raw.github.com/WeAreRump/VisualOS/master/System/boot")
+downloadFile("/boot", "https://raw.github.com/WeAreRump/master/VisualOS/boot")
+
+os.reboot()
