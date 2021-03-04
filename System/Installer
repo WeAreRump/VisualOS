@@ -1,7 +1,7 @@
 function downloadFile(path, url)
   print("Copying: " .. path)
-	data = http.get(url).readAll()
-	file = assert(io.open(path, "w"))
+	local data = http.get(url).readAll()
+	local file = assert(io.open(path, "w"))
 	file:write(data)
 	file:close()
 end
